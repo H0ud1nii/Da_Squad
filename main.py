@@ -12,6 +12,9 @@ sidebar_style = """
             background-color: #1a1a1a !important;
             color: white !important;
         }
+        .css-163ttbj p{
+            color: white !important;
+        }
     </style>
 """
 st.markdown(sidebar_style, unsafe_allow_html=True)
