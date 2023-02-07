@@ -5,6 +5,16 @@ import random as rd
 st.set_page_config(page_title='Da Squad', initial_sidebar_state='expanded', layout='wide')
 
 options = ['Home', 'Spy', 'Never Have I Ever']
+# Add some styling to the sidebar
+sidebar_style = """
+    <style>
+        .sidebar {
+            background-color: #1a1a1a;
+            color: white;
+        }
+    </style>
+"""
+st.markdown(sidebar_style, unsafe_allow_html=True)
 game = st.sidebar.selectbox('Games 3al Lebnene', options)
 
 class Games():
