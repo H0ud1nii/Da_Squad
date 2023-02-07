@@ -8,9 +8,9 @@ options = ['Home', 'Spy', 'Never Have I Ever']
 # Add some styling to the sidebar
 sidebar_style = """
     <style>
-        .css-6qob1r e1fqkh3o3 {
-            background-color: #1a1a1a;
-            color: white;
+        .css-163ttbj{
+            background-color: #1a1a1a !important;
+            color: white !important;
         }
     </style>
 """
