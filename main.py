@@ -80,7 +80,7 @@ class Games():
 
         st.markdown('** **')
 
-        spy1, spy2 = st.columns([0.1,1])
+        spy1, spy2 = st.columns([0.5,1])
         with spy1:
             reveal = st.button('Reveal')
         with spy2:
