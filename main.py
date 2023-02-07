@@ -129,6 +129,7 @@ class Games():
 g = Games()
 
 if game == 'Home':
+    st.markdown('Testing Front')
     st.header('Da Squad')
     st.subheader('Games 3al Lebene, ')
 
