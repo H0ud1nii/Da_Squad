@@ -80,7 +80,7 @@ class Games():
 
         st.markdown('** **')
 
-        spy1, spy2 = st.columns([0.5,1])
+        spy1, spy2 = st.columns([0.1,1])
         with spy1:
             reveal = st.button('Reveal')
         with spy2:
@@ -95,11 +95,16 @@ class Games():
                 index = 0
             if reveal:
                 try:
-                    new_word = data[index][f'Player {index + 1}']
-                    st.subheader(f"Player {index + 1}")
-                    st.write(f"Word:  {new_word}")
+                    if data[-1] !=data[index]:
+                        st.subheader(f"Player {index + 1}")
+                        st.write(f"Word:  {data[index][f'Player {index + 1}']}")
+                    else:
+                        st.subheader(f"Player {index + 1}")
+                        st.write(f"Word:  {data[index][f'Player {index + 1}']}")
+                        st.info('All Players Have Been Revealed!')
                 except IndexError:
                     st.info('All Players Have Been Revealed!')
+
             elif next:
                 index += 1
                 with open("index.txt", "w") as indexf:
@@ -125,7 +130,7 @@ g = Games()
 
 if game == 'Home':
     st.header('Da Squad')
-    st.subheader('Lebanese Style Games, Games 3al lebnene')
+    st.subheader('Games 3al Lebene, ')
 
 elif game == 'Spy':
     st.header('Spy Ya Maneyik')
@@ -148,5 +153,4 @@ elif game == 'Never Have I Ever':
             -The Game will auto generate the "Never Have I Ever" sentences
             ''')
     g.never()
-
 
