@@ -14,6 +14,7 @@ sidebar_style = """
         }
         .css-163ttbj p{
             color: white !important;
+            font-family: Copperplate, Fantasy;
         }
     </style>
 """
